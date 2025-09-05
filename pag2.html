@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="AN MAIN.jpg">
+<title>Loading</title>
+</head>
+<style>
+
+body{
+    background-color: black;
+}
+    .youtube-loader {
+      display: flex;
+      height: 50px;
+      margin-right: 10px;
+      margin-left: 200PX;    
+      
+      
+    }
+    .dot {
+      
+      width: 100px;
+      height: 90px;
+      margin: 250px 60px ;     
+      background-color: black;
+      animation: blink 3s infinite both;
+    }
+  
+    .dot:nth-child(2) {
+      animation-delay: 0.8s;
+      background-color:black;
+    }
+  
+    .dot:nth-child(3) {
+      animation-delay: 0.6s;
+      background-color:black;
+    }
+    .dot:nth-child(4) {
+      animation-delay: 0.4s;
+      background-color:black;
+    }
+    .dot:nth-child(5) {
+      animation-delay: 0.3s;
+      background-color:black;
+    }
+    .dot:nth-child(6) {
+      animation-delay: 0.5s;
+      background-color:black;
+    }
+  
+    @keyframes blink {
+      0%, 80%, 100% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+    }
+    button{
+        margin-top: 430px;
+        margin-left: 220px;
+        background: linear-gradient(45deg, #ff6a00, #ee0979);
+        color: white;
+        font-size: 1.5rem;
+        padding: 5px 30px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        outline: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 4px #b76969;
+    }
+      button:hover {
+        text-shadow: 0 40PX 40px #723fa2;
+
+        box-shadow: 0 40PX 40px #666;
+        transform: translateY(-4px); 
+
+    }
+
+    button:active {
+        box-shadow: 0 40PX 40px #666;
+        transform: translateY(4px);
+    }
+    .para{
+        font-size: 50px;
+        margin-left: 500px;
+        text-align: start;
+        color: aliceblue ;
+        font-family: 'Indie Flower', cursive;;
+        text-shadow:  0 0 15px pink, 0 0 15px pink,0 0 15px pink,0 0 15px pink;
+
+    }
+    h3{
+        font-size: 30px;
+    }
+    img{
+      height: 300px;
+      width: 250px;
+
+    }
+
+  </style>
+<body> 
+    <div class="youtube-loader">
+
+      <div class="dot"><img src="an10.jpg" alt=""></div>
+      <div class="dot"><img src="an9.jpg" alt=""></div>
+      <div class="dot"><img src="an8.jpg" alt=""></div>
+      <div class="dot"><img src="an7.jpg" alt=""></div>
+      <div class="dot"><img src="an6.jpg" alt=""></div>
+      <div class="dot"><img src="an5.jpg  " alt=""></div>
+
+    </div>
+
+<h1 class="para" id="changingText">HYE PEOPLES</h1>
+<p class="para" id="url"></p>
+
+
+<script>
+
+    setTimeout(() => {
+        //BUTTON IS GIVEN HERE
+        document.getElementById('url').innerHTML = '<a href="pag3.html"><button><h3>NEXT PAGE</h3></button></a>';
+      }, 6500);
+
+  const textElement = document.getElementById('changingText');
+  //write here to change the text
+  const messages = ['LOADING','YOUR ARTS','WAIT FOR NEXT PAGE'];
+  let index = 0;
+
+  setInterval(() => {
+    textElement.textContent = messages[index];
+    index = (index + 1) % messages.length;
+  }, 2000); 
+
+</script>
+</body>
+</html>
+

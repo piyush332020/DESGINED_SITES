@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="AN MAIN.jpg">
+    <title>LAST ART</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        background-image: url(an17.jpg);
+        background-repeat: no-repeat;
+        background-size: 174.55rem;
+        background-color: rgba(0,0,0,0.7);
+        background-blend-mode:color-burn;
+    }
+        @media screen and (max-width: 600px) {
+            body{
+                background-image: url(an17.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: rgba(0,0,0,0.7);
+                background-blend-mode:color-burn;
+            }
+        }
+    h1{
+        color: antiquewhite;
+        font-size: 45px;
+        animation-fill-mode: forwards;
+        animation-name: para;
+        animation-duration:3s;
+        animation-iteration-count: 1;
+        
+    }
+    h1:hover{
+        color:rgb(31, 89, 70);
+        text-shadow: 0 16px 24px rgb(31, 89, 70);
+    }
+    @keyframes para {
+            from{
+               
+                height: 500PX;
+                opacity: 0%;
+            }
+            to{
+               
+                height: 45PX;
+                opacity: 100%;
+            }
+        }
+    img{
+        height: 50vh;
+        width: 45vh;
+        margin-top: 80px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        animation-name: slide;
+        animation-duration: 2s;
+        animation-fill-mode: backwards;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in;
+        }
+    @keyframes slide {
+        from{top:0;
+             left: 0px;
+            opacity: 100%;   }
+        to{ top: 0;
+        left: 1100px;
+        opacity: 0%; }  
+    }
+    img:hover{
+        transform: scale(3.2);
+    }
+    .p1{
+        font-style: italic;
+        line-height: 2;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        color: beige;
+        padding: 30px;
+        word-spacing: 10px;  
+        margin-top: 100px;
+        flex-direction: column;
+    }
+       
+    .p1:hover{
+        color: aquamarine;
+    }
+        button{
+            margin-top: 2rem;
+            margin-bottom: 70px;
+            box-sizing: border-box;
+            text-shadow: 0 0 12px;
+            shape-outside: -moz-radial-gradient();
+            background: linear-gradient(45deg, #bac317, #ff52a6);
+            text-align: center;
+            align-self: center;
+            height: 70px;
+            width: 140px;
+            font-size: 24px;
+            font-style: italic;
+            border-radius: 10%;
+    
+            
+        }
+        button:hover{
+            transform: scale(1.1);
+            box-shadow:0px 12px 15px  rgb(111, 60, 77) ;
+            
+        }
+        .div1{
+            padding-bottom: 50px;
+            align-self: center;
+        }
+          
+        header a{
+            color: #eee;
+            padding: 5px 10px;
+            transition: 0.2s;
+          }
+          
+        a.active{
+            background: #14ff72cb;
+            border-radius: 2px;
+          }
+          
+        header a:hover{
+            background: #14ff72cb;
+            border-radius: 2px;
+          }
+</style>
+<body>
+    </header></div>
+    <h1>THE ART BETWEEN LOVE AN RESPONSIBILITY</h1>
+    <h2 class="p2" id="url"></h2>
+    <div class="container">
+        <p class="p1">This artwork beautifully encapsulates the struggle between love and responsibility, portraying a puppet-like figure bound by the strings of an imposing hand. The delicate yet firm grip of the hand suggests an unseen force controlling the subject, symbolizing the tension between emotions and obligations.
+
+            The outstretched arms of the figure reach towards opposing directions—one hand grasping for "LOVE," filled with longing and hope, while the other is tethered to "RESPONSIBILITY," representing duty and societal expectations. The contrast between these elements highlights the universal human experience of being torn between personal desires and life’s demands.
+            
+            The artist’s use of shading and texture brings depth to the drawing, making the puppet's struggle feel almost tangible. The flowing hair, slightly bent posture, and stretched strings create a sense of motion, as if the figure is caught mid-dance between freedom and control.
+            
+            This artwork speaks volumes about life’s unseen forces, the choices we make, and the invisible hands that shape our destinies. A masterpiece of expression and thought!<br>For Getting Art click On The Button </p>
+            
+        </div>
+        <button onclick="display()">click here</button>
+        <div class="div1">    <header>
+            <nav>
+                <a href="slider.html">MORE ARTS</a>
+                <a href="pag10.html">ART GALLERY</a>
+        
+            </nav>
+        <script>
+            function display(){
+                window.scrollTo({top:20,behavior:"smooth"});
+                setTimeout(() => {
+                    document.getElementById('url').innerHTML = '<img src ="an11.jpg">';
+                  });
+            }
+        </script>
+</body>
+</html>
