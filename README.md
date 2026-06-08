@@ -14,7 +14,7 @@ This website is a digital art journey — a space where creativity meets technol
 
 Every art page has been carefully designed with immersive backgrounds, glowing text effects, and hover animations ✨. Images expand dramatically on hover 🔍, inviting viewers to dive deeper into the details of each masterpiece. Text descriptions are styled with typewriter animations ⌨️ and glowing shadows, adding an elegant storytelling touch to each artwork.
 
-Your gallery also features a 3D rotating carousel 🎠 where artworks float in space, creating a futuristic museum vibe. Navigation feels effortless, with clearly styled buttons and smooth scrolling that guide the user naturally from one piece to another.
+gallery also features a 3D rotating carousel 🎠 where artworks float in space, creating a futuristic museum vibe. Navigation feels effortless, with clearly styled buttons and smooth scrolling that guide the user naturally from one piece to another.
 
 The later pages, like the slider section 🎞️, bring in cinematic vibes — artworks slide in and out with motion, supported by thumbnail previews and glowing navigation arrows. It feels like watching a visual symphony where art and technology dance together.
 
